@@ -57,13 +57,13 @@ class HelpMod(loader.Module):
         	"\n\n\n<code>.help raph</code>:<i> Shows all your PP and PPE originated modules.</i>\n"
         	"\n<code>.help uni</code>:<i><b> Shows all your Uniborg originated modules.</b></i>\n"
         	"\n<code>.help ftg</code>:<i><b> Shows all your native modules.</b></i>\n"
-        	"\n<code>.help all:</code><i><b> Shows all your modules.</b></i>")
+        	"\n<code>.help all</code>:<i><b> Shows all your modules.</b></i>")
         	return
         for mod in self.allmodules.modules:
         	if mod.name.find("RaphielGang") != -1:
         		raph += "\n\n<b>" + mod.name + "</b>: "
         		for cmd in mod.commands:
-        			raph += "<code>" + cmd + "</code>, "
+        			raph += "<code>". + cmd + "</code>, "
         		raph = raph[:-2:]
         		raph = raph.replace("Raphielgang Configuration Placeholder:", "")
         	if mod.name.find("UniBorg") != -1:
