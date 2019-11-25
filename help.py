@@ -63,7 +63,7 @@ class HelpMod(loader.Module):
         	if mod.name.find("RaphielGang") != -1:
         		raph += "\n\n<b>" + mod.name + "</b>: "
         		for cmd in mod.commands:
-        			raph += "<code>". + cmd + "</code>, "
+        			raph += "<code>" + .cmd + "</code>, "
         		raph = raph[:-2:]
         		raph = raph.replace("Raphielgang Configuration Placeholder:", "")
         	if mod.name.find("UniBorg") != -1:
