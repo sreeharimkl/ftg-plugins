@@ -63,25 +63,25 @@ class HelpMod(loader.Module):
         	if mod.name.find("RaphielGang") != -1:
         		raph += "\n\n<b>" + mod.name + "</b>: "
         		for cmd in mod.commands:
-        			raph += "<code>" + .cmd + "</code>, "
+        			raph += "<code>." + cmd + "</code>, "
         		raph = raph[:-2:]
         		raph = raph.replace("Raphielgang Configuration Placeholder:", "")
         	if mod.name.find("UniBorg") != -1:
         		uni += "\n\n<b>" + mod.name + "</b>: "
         		for cmd in mod.commands:
-        			uni += "<code>" + cmd + "</code>, "
+        			uni += "<code>." + cmd + "</code>, "
         		uni = uni[:-2:]
         		uni = uni.replace("Uniborg Configuration Placeholder:", "")
         	if mod.name.find("UniBorg") == -1 and mod.name.find("RaphielGang") == -1:
         		ftg += "\n\n<b>" + mod.name + "</b>: "
         		for cmd in mod.commands:
-        			ftg += "<code>" + cmd + "</code>, "
+        			ftg += "<code>." + cmd + "</code>, "
         		ftg = ftg[:-2:]
         		ftg = ftg.replace("Raphielgang Configuration Placeholder:", "")
         		ftg = ftg.replace("Uniborg Configuration Placeholder:", "")
         	all += "\n\n<b>" + mod.name + "</b>: "
         	for cmd in mod.commands:
-        		all += "<code>" + cmd + "</code>, "
+        		all += "<code>." + cmd + "</code>, "
         	all = all[:-2:]
         if args == "uni":
         	await message.edit(uni)
