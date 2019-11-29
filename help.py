@@ -54,10 +54,10 @@ class HelpMod(loader.Module):
         if not args:
         	await message.edit(
         	"<b>Please choose a section to see your modules:</b>\n<b>—–—–—–—–—–——–––—–—–———</b>"
-        	"\n\n\n<code>.help raph</code>: Shows all your PP and PPE originated modules.\n"
-        	"\n<code>.help uni</code>: Shows all your Uniborg originated modules.\n"
-        	"\n<code>.help ftg</code>: Shows all your native modules.\n"
-        	"\n<code>.help all</code>: Shows all your modules.\n\n")
+        	"\n\n\n<code>.help raph</code><b>:</b><i> Shows all your PP and PPE originated modules. </i> \n"
+        	"\n<code>.help uni</code><b>:</b><i> Shows all your Uniborg originated modules. </i> \n"
+        	"\n<code>.help ftg</code><b>:</b><i> Shows all your native modules. </i> \n"
+        	"\n<code>.help all</code><b>:</b><i> Shows all your modules. </i> \n")
         	return
         for mod in self.allmodules.modules:
         	if mod.name.find("RaphielGang") != -1:
