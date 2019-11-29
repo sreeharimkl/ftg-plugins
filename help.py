@@ -53,7 +53,7 @@ class HelpMod(loader.Module):
         args = utils.get_args_raw(message)
         if not args:
         	await message.edit(
-        	"<b>Please choose a section to see your modules:</b>\n<b>—–—–—–—–—–——–––—–—–———</b>"
+        	"<b>Please choose a section to see your modules:</b>\n<b> —–—–—–—–—–——–––—–—–——— </b>"
         	"\n\n\n<code>.help raph</code><b>:</b><i> Shows all your PP and PPE originated modules. </i> \n"
         	"\n<code>.help uni</code><b>:</b><i> Shows all your Uniborg originated modules. </i> \n"
         	"\n<code>.help ftg</code><b>:</b><i> Shows all your native modules. </i> \n"
